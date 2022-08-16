@@ -8,10 +8,9 @@
 #include "Walls/AxisymmetricIntersectionOfWalls.h"
 
 // Global variables for particle sizes.
-// eps: the opening of the cube insertion boundary.
 double big_particle_radius = 0.08;
 double small_particle_radius = 0.02;
-double eps = 0.2;
+double eps = 0.2;  // eps: the opening of the cube insertion boundary.
 
 double stop_flow = 1.0;  // the time-step that the insertion boundary stops
 double oscillation_amplitude = 1.0;  // the amplitude of the velocity. the higher this value the more the wall moves
