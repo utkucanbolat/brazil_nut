@@ -1,7 +1,6 @@
 #include "Mercury3D.h"
 #include "Species/Species.h"
 #include "Walls/InfiniteWall.h"
-#include <random>
 #include "Boundaries/CubeInsertionBoundary.h"
 #include "Boundaries/DeletionBoundary.h"
 #include "Species/LinearViscoelasticFrictionSpecies.h"
