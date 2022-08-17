@@ -6,7 +6,7 @@
 #include "Species/LinearViscoelasticFrictionSpecies.h"
 #include "Walls/AxisymmetricIntersectionOfWalls.h"
 
-// Global variables for particle sizes.
+// Global variables
 double big_particle_radius = 0.08;
 double small_particle_radius = 0.02;
 double eps = 0.2;  // eps: the opening of the cube insertion boundary.
