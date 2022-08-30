@@ -16,7 +16,7 @@ double oscillation_amplitude = 1.0;  // the amplitude of the velocity. the highe
 double pulse_interval = 0.25;  // the interval between velocity change
 double stop_kick = 20.0; // after this time-step the shake stops
 
-class Quantum : public Mercury3D {
+class BrazilNut : public Mercury3D {
 public:
     void setupInitialConditions() override {
         // Determine the dimension of the cylinder
@@ -87,7 +87,7 @@ public:
 int main(int argc, char *argv[]) {
 
     // Instantiate the simulation parameters
-    Quantum problem;
+    BrazilNut problem;
     problem.setName("brazil_nut_cylinder");
     problem.setSystemDimensions(3);
     problem.setParticleDimensions(3);
@@ -124,7 +124,7 @@ int main(int argc, char *argv[]) {
 
     problem.setTimeStep(0.005 / 50.0); // (collision time)/50.0
 
-    problem.setNumberOfOMPThreads(30);  // parallelization
+    problem.setNumberOfOMPThreads(30);  // parallelization. 30 is the number of threads
     problem.solve(argc, argv);
 
     return 0;
